@@ -58,9 +58,10 @@
 .grid {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
   max-width: 1200px;
+  margin: 0 auto;
 }
 
 .card {
@@ -116,4 +117,172 @@
 }
 .logo img {
   filter: invert(1);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  color: #fff;
+}
+.navLinks {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+}
+.navLinks a {
+  color: #333;
+  margin: 0px 10px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: all 0.3s ease 0s;
+}
+.navLinks a:hover {
+  color: #0ea5e9;
+}
+.avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: 1rem;
+  border: #0ea5e9 solid 2px;
+  transition: all 0.3s ease 0s;
+}
+.avatar:hover {
+  border: skyblue solid 2px;
+  cursor: pointer;
+}
+.profileDropdown {
+  position: absolute;
+  top: 80px;
+  right: 20px;
+  width: 200px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.packCard {
+  width: 98%;
+  margin: 0.5%;
+}
+.shopPack {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  border: #eaeaea solid 2px;
+}
+.packInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 60%;
+}
+
+.nftCard {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px;
+  border: #eaeaea solid 2px;
+}
+.buyButton {
+  width: 100% !important;
+}
+
+.cardName {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: -10px;
+  padding: 0px;
+}
+
+.saleCard {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px auto;
+  border: #eaeaea solid 2px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.myCardInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.myCardInfo p {
+  color: #333;
+  font-size: 12px;
+  border: #eaeaea solid 2px;
+  padding: 5px;
+  border-radius: 10px;
+}
+.saleButton {
+  background-color: #0ea5e9 !important;
+  border-radius: 4px !important;
+  width: 100% !important;
+  padding: 10px !important;
+  color: #fff !important;
+  font-weight: bold !important;
+  border: none !important;
+  cursor: pointer !important;
+}
+
+.listingInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.heroPage {
+  width: 100%;
+  background-image: url("https://media.discordapp.net/attachments/1074964327053930518/1111406889029357628/watase.eth_land_with_pokemon_creatures_landscape_92325be6-3621-4dac-b936-d03a0bd854f8.png?width=1151&height=685");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 75vh;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  color: white;
+}
+.heroSection {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  text-align: center;
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+}
+.heroButton {
+  background-color: white;
+  color: #1b2129;
+  border: none;
+  cursor: pointer;
+  padding: 20px;
+  border-radius: 10px;
+}
+.connectWalletBtn {
+  background-color: #0ea5e9 !important;
 }
