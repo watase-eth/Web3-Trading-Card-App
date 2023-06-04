@@ -1,6 +1,7 @@
 import { ThirdwebNftMedia, useContract, useNFT } from "@thirdweb-dev/react";
 import { BigNumber } from "ethers";
 import styles from "../styles/Home.module.css";
+import { CARD_ADDRESS } from "../const/addresses";
 
 type Props = {
     reward: {
@@ -11,8 +12,7 @@ type Props = {
 };
 
 export const PackRewardCard = ({ reward }: Props) => {
-    const cardAddress = "0xF810082B4FaC42d65156Da88D5212dfAA75D0117";
-    const { contract } = useContract(cardAddress, "edition");
+    const { contract } = useContract(CARD_ADDRESS, "edition");
     const { data } = useNFT(contract, reward.tokenId);
     
     return (

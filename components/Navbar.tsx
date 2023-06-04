@@ -1,7 +1,7 @@
 import { ConnectWallet, useAddress, useDisconnect } from "@thirdweb-dev/react";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
-import { use, useState } from "react";
+import { useState } from "react";
 
 export default function Navbar() {
     const address = useAddress();
