@@ -4,8 +4,10 @@ import dotenv from "dotenv";
 dotenv.config();
 
 (async () => {
-    const sdk = ThirdwebSDK.fromPrivateKey(process.env.PRIVATE_KEY, "mumbai");
-
+    const sdk = ThirdwebSDK.fromPrivateKey(process.env.PRIVATE_KEY, "mumbai",{
+        clientId: "YOUR_CLIENT_ID",
+        secretKey: "YOUR_SECRET_KEY", 
+      });
     const packAddress = "0xCf31dC000D76fbD1cc68760E577B17be7243dD34";
     const cardAddress = "0xF810082B4FaC42d65156Da88D5212dfAA75D0117";
 
