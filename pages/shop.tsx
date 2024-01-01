@@ -1,4 +1,4 @@
-import { useContract, useDirectListings } from "@thirdweb-dev/react";
+import { useContract, useValidDirectListings } from "@thirdweb-dev/react";
 import { MARKETPLACE_ADDRESS, PACK_ADDRESS } from "../const/addresses";
 import styles from "../styles/Home.module.css";
 import { PackNFTCard } from "../components/PackNFT";
@@ -12,7 +12,7 @@ export default function Shop() {
     const {
         data: directListings,
         isLoading: loadingDirectListings,
-    } = useDirectListings(
+    } = useValidDirectListings(
         marketplace,
         {
             tokenContract: PACK_ADDRESS,
