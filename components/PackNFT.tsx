@@ -1,5 +1,5 @@
 import { MARKETPLACE_ADDRESS, PACK_ADDRESS } from "../const/addresses";
-import { MediaRenderer, Web3Button, useAddress, useContract, useValidDirectListings, useNFT } from "@thirdweb-dev/react";
+import { MediaRenderer, Web3Button, useAddress, useContract, useDirectListings, useNFT } from "@thirdweb-dev/react";
 import styles from "../styles/Home.module.css";
 
 type Props = {
@@ -16,7 +16,7 @@ export const PackNFTCard = ({ contractAddress, tokenId }: Props) => {
 
 
     const { data: packListings, isLoading: loadingPackListings } = 
-    useValidDirectListings(
+    useDirectListings(
         marketplace,
         {
             tokenContract: PACK_ADDRESS,
